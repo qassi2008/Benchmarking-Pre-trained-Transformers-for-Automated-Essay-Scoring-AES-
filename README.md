@@ -14,22 +14,22 @@ Set paths via env vars (defaults shown in code):
 - `DATA_DIR` (default `/cluster/datastore/abdelazq`) must contain `train.csv`, `test.csv`, `sample_submission.csv`
 - `OUTPUT_DIR` (default `/cluster/datastore/abdelazq/AES`) will store checkpoints and logs
 
-Features
+### Features
 
-End-to-end training and evaluation pipelines (PyTorch + Hugging Face Transformers)
+- End-to-end training and evaluation pipelines (PyTorch + Hugging Face Transformers)
 
-Multi-trait regression head for six analytic scores
-cohesion, syntax, vocabulary, phraseology, grammar, conventions
+- Multi-trait regression head for six analytic scores
+- cohesion, syntax, vocabulary, phraseology, grammar, conventions
 
-Metric: MCRMSE with per-trait RMSE reporting
+- Metric: MCRMSE with per-trait RMSE reporting
 
-Reproducible configs per backbone (DeBERTa-base, DeBERTa-v3-base, DeBERTa-v3+SiFT, RoBERTa-base, ELECTRA-base, XLNet-base)
+- Reproducible configs per backbone (DeBERTa-base, DeBERTa-v3-base, DeBERTa-v3+SiFT, RoBERTa-base, ELECTRA-base, XLNet-base)
 
-Mixed precision, cosine LR schedule, AdamW, fixed seeds
+- Mixed precision, cosine LR schedule, AdamW, fixed seeds
 
-EDA notebooks: length, complexity, polarity/subjectivity, token distributions
+- EDA notebooks: length, complexity, polarity/subjectivity, token distributions
 
-Optional Weights & Biases (W&B) run tracking
+- Optional Weights & Biases (W&B) run tracking
 
 
 ### One-liners
