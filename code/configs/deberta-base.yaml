@@ -1,0 +1,17 @@
+model_name: microsoft/deberta-base
+max_length: 512
+batch_size: 8
+eval_batch_size: 16
+epochs: 5
+lr: 2e-5
+weight_decay: 0.01
+warmup_ratio: 0.06
+scheduler: cosine
+dropout: 0.3
+seed: 42
+loss: smooth_l1
+targets: [cohesion, syntax, vocabulary, phraseology, grammar, conventions]
+data:
+  train_csv: data/ellipse/train.csv
+  val_csv: data/ellipse/val.csv
+out_dir: outputs/checkpoints/deberta-base_seed42/
